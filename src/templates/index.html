@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verificador de Senha</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Verificador de Força de Senha</h1>
+
+        <form method="POST">
+            <input type="password" name="senha" placeholder="Digite sua senha" required>
+            <button type="submit">Verificar</button>
+        </form>
+
+        {% if resultado %}
+            <p class="resultado">Força: {{ resultado }}</p>
+        {% endif %}
+    </div>
+
+</body>
+</html>
