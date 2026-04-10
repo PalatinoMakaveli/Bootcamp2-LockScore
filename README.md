@@ -67,28 +67,6 @@ O objetivo é incentivar a criação de senhas mais seguras e reduzir a exposiç
 
 ---
 
-## - Estrutura do Projeto:
-
-password-checker/
-│
-├── .github/workflows/ci.yml
-├── src/
-│   ├── app.py
-│   ├── password_checker.py
-│   ├── templates/
-│   │   └── index.html
-│   └── static/
-│       └── style.css
-│
-├── tests/
-│   └── test_password.py
-│
-├── requirements.txt
-├── README.md
-├── .gitignore
-
----
-
 ## - Instruções de Instalação:
 
 ### 1. Clonar o repositório:
