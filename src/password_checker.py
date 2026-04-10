@@ -29,23 +29,27 @@ def check_password_strength(password: str):
     else:
         feedback.append("Adicione caracteres especiais (@#$%&)")
 
-    # Classificação
+    # Classificação + barra
     if score <= 2:
         strength = "Fraca"
         color = "red"
         time = "Pode ser quebrada em segundos"
+        width = "30%"
     elif score <= 4:
         strength = "Média"
         color = "orange"
         time = "Pode levar algumas horas ou dias"
+        width = "60%"
     else:
         strength = "Forte"
         color = "green"
         time = "Pode levar anos para ser quebrada"
+        width = "100%"
 
     return {
         "strength": strength,
         "color": color,
         "time": time,
-        "feedback": feedback
+        "feedback": feedback,
+        "width": width
     }

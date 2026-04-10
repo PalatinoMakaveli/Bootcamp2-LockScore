@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Verificador de Senha</title>
+    <title>LockScore</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
     <div class="container">
-        <h1>Verificador de Força de Senha</h1>
+        <h1>LockScore</h1>
 
         <form method="POST">
             <input type="password" id="senha" name="senha" placeholder="Digite sua senha" value="{{ senha }}" required>
@@ -34,12 +34,7 @@
 
             <!-- BARRA DE FORÇA -->
             <div style="width: 300px; height: 20px; background: #ccc; margin: 10px auto;">
-                <div style="width: 
-                    {% if resultado.strength == 'Fraca' %}30%
-                    {% elif resultado.strength == 'Média' %}60%
-                    {% else %}100%
-                    {% endif %}
-                    ; height: 100%; background: {{ resultado.color }};">
+                <div style="width: {{ resultado.width }}; height: 100%; background: {{ resultado.color }};">
                 </div>
             </div>
 
