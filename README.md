@@ -123,30 +123,27 @@ pip install -r requirements.txt
 
 ## - Instruções de Execução:
 
-No seu terminal do VS Code digite:
+- No seu terminal do VS Code digite:
 python src/app.py
-
-Acesse no navegador:
+- Acesse no navegador:
 http://127.0.0.1:5000
-E digite para parar a execução do código: (Ctrl + C)
+- Digite para parar a execução do código: (Ctrl + C)
 ---
 
-## 🧪 Instruções para Rodar os Testes:
+## - Instruções para Rodar os Testes:
 No seu terminal do VS Code digite:
 python -m pytest
 
 ---
 
-## Instruções para Rodar o Lint:
+## - Instruções para Rodar o Lint:
 No seu terminal do VS Code digite:
 ruff check .
 
 ---
 
-## Critérios de Avaliação da Senha:
-
+## - Critérios de Avaliação da Senha:
 A aplicação utiliza uma abordagem baseada em regras, considerando:
-
 * comprimento mínimo (≥ 12 caracteres)
 * presença de letras maiúsculas
 * presença de letras minúsculas
@@ -171,18 +168,18 @@ O projeto utiliza GitHub Actions para:
 
 ---
 
-## 👨‍💻 Autor
+## - Autor:
 
 **Gustavo Augusto D. Braga**
 
 ---
 
-## Link do Repositório Público:
+## - Link do Repositório Público:
 https://github.com/PalatinoMakaveli/Bootcamp2-LockScore
 
 ---
 
-## 📄 Licença
+## - Licença:
 
 Este projeto está sob a licença MIT.
 
