@@ -12,9 +12,9 @@
         <form method="POST">
             <input type="password" id="senha" name="senha" placeholder="Digite sua senha" value="{{ senha }}" required>
 
-<button type="button" onclick="toggleSenha()">👁️</button>
+            <button type="button" onclick="toggleSenha()">👁️</button>
 
-<button type="submit">Verificar</button>
+            <button type="submit">Verificar</button>
         </form>
 
         {% if resultado %}
@@ -33,7 +33,7 @@
             {% endif %}
 
             <!-- BARRA DE FORÇA -->
-            <div style="width: 300px; height: 20px; background: #ccc; margin: auto;">
+            <div style="width: 300px; height: 20px; background: #ccc; margin: 10px auto;">
                 <div style="width: 
                     {% if resultado.strength == 'Fraca' %}30%
                     {% elif resultado.strength == 'Média' %}60%
@@ -46,17 +46,17 @@
         {% endif %}
     </div>
 
-<script>
-function toggleSenha() {
-    const input = document.getElementById("senha");
+    <script>
+    function toggleSenha() {
+        const input = document.getElementById("senha");
 
-    if (input.type === "password") {
-        input.type = "text";
-    } else {
-        input.type = "password";
+        if (input.type === "password") {
+            input.type = "text";
+        } else {
+            input.type = "password";
+        }
     }
-}
-</script>
+    </script>
 
 </body>
 </html>
