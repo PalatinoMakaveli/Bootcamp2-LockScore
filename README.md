@@ -121,7 +121,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Instruções de Execução:
+## - Instruções de Execução:
 
 No seu terminal do VS Code digite:
 python src/app.py
