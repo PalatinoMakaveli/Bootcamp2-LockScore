@@ -71,7 +71,7 @@ O objetivo é incentivar a criação de senhas mais seguras e reduzir a exposiç
 
 1. Instale o Git;
 
-2. No terminal do Git digite: git --version;
+2. No terminal do Git digite: "git --version";
 
 3. Instale o VS Code;
 
@@ -79,13 +79,13 @@ O objetivo é incentivar a criação de senhas mais seguras e reduzir a exposiç
 
 5. Instale o Python; 
 
-6. Digite python --version no CMD;
+6. Digite: "python --version" no CMD;
 
 7. Abra o VS Code;
 
 8. Aperte as teclas: Ctrl + Shift + P;
 
-9. Digite: Git: Clone;
+9. Digite: "Git: Clone";
 
 10. Cole o link do projeto no github: https://github.com/PalatinoMakaveli/Bootcamp2-LockScore
 
@@ -93,21 +93,21 @@ O objetivo é incentivar a criação de senhas mais seguras e reduzir a exposiç
 
 12. Clique em open;
 
-13. Abra o terminal do VS Code e digite: pip install -r requirements.txt;
+13. Abra o terminal do VS Code e digite: "pip install -r requirements.txt";
 
-14. digite cd src e aperte enter;
+14. digite "cd src" e aperte enter;
 
-15. para rodar o projeto: digite python app.py;
+15. para rodar o projeto digite: "python app.py";
 
-16. depois abra no navegador: http://127.0.0.1:5000;
+16. depois abra no navegador: "http://127.0.0.1:5000";
 
 17. após testar a aplicação aperte CTRL + C para encerrar o programa;
 
-18. para rodar os testes saia do domain src digitando cd .. e aperte enter;
+18. para rodar os testes saia do domain src digitando "cd .." e aperte enter;
 
-19. Apos isso digite: python -m pytest;
+19. Apos isso digite: "python -m pytest";
 
-20. para rodar o lint digite: ruff check .
+20. para rodar o lint digite: "ruff check ."
 
 ## - Critérios de Avaliação da Senha:
 A aplicação utiliza uma abordagem baseada em regras, considerando:
