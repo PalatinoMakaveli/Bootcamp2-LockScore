@@ -69,47 +69,45 @@ O objetivo é incentivar a criação de senhas mais seguras e reduzir a exposiç
 
 ## - Instruções de Instalação:
 
-### 1- Instalar o Git:
-Instale o Git;
+1. Instale o Git;
 
-No terminal do Git Digite: git --version;
+2. No terminal do Git digite: git --version;
 
-Instale o VS Code;
+3. Instale o VS Code;
 
-Instale a extensão oficial do python;
+4. Instale a extensão oficial do python;
 
-Instale o Python; 
+5. Instale o Python; 
 
-Digite python --version no CMD;
+6. Digite python --version no CMD;
 
-Abra o VS Code;
+7. Abra o VS Code;
 
-Aperte as teclas: Ctrl + Shift + P;
+8. Aperte as teclas: Ctrl + Shift + P;
 
-Digite: Git: Clone;
+9. Digite: Git: Clone;
 
-Cole o link do projeto no github: https://github.com/PalatinoMakaveli/Bootcamp2-LockScore
+10. Cole o link do projeto no github: https://github.com/PalatinoMakaveli/Bootcamp2-LockScore
 
-Crie uma pasta chamada "lockscore";
+11. Crie uma pasta chamada "lockscore";
 
-Clique em open;
+12. Clique em open;
 
+13. Abra o terminal do VS Code e digite: pip install -r requirements.txt;
 
-Abra o terminal do VS Code e digite: pip install -r requirements.txt;
+14. digite cd src e aperte enter;
 
-digite cd src e aperte enter;
+15. para rodar o projeto: digite python app.py;
 
-para rodar o projeto: digite python app.py;
+16. depois abra no navegador: http://127.0.0.1:5000;
 
-depois abra no navegador: http://127.0.0.1:5000;
+17. após testar a aplicação aperte CTRL + C para encerrar o programa;
 
-após testar a aplicação aperte CTRL + C para encerrar o programa;
+18. para rodar os testes saia do domain src digitando cd .. e aperte enter;
 
-para rodar os testes saia do domain src digitando cd .. e aperte enter;
+19. Apos isso digite: python pytest;
 
-Apos isso digite: python pytest;
-
-para rodar o lint digite: ruff check .
+20. para rodar o lint digite: ruff check .
 
 ## - Critérios de Avaliação da Senha:
 A aplicação utiliza uma abordagem baseada em regras, considerando:
