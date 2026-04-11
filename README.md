@@ -105,7 +105,7 @@ O objetivo é incentivar a criação de senhas mais seguras e reduzir a exposiç
 
 18. para rodar os testes saia do domain src digitando cd .. e aperte enter;
 
-19. Apos isso digite: python pytest;
+19. Apos isso digite: python -m pytest;
 
 20. para rodar o lint digite: ruff check .
 
