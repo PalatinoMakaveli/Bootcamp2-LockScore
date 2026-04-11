@@ -107,7 +107,9 @@ O objetivo é incentivar a criação de senhas mais seguras e reduzir a exposiç
 
 19. Apos isso digite: "python -m pytest";
 
-20. para rodar o lint digite: "ruff check ."
+20. Para rodar o lint digite: "pip install ruff";
+
+21. depois digite: "ruff check .";
 
 ## - Critérios de Avaliação da Senha:
 A aplicação utiliza uma abordagem baseada em regras, considerando:
