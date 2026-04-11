@@ -69,56 +69,47 @@ O objetivo é incentivar a criação de senhas mais seguras e reduzir a exposiç
 
 ## - Instruções de Instalação:
 
-### 1. Clonar o repositório:
+### 1- Instalar o Git:
+Instale o Git;
 
-Abra seu Git e digite:
-git clone https://github.com/PalatinoMakaveli/Bootcamp2-LockScore.git
-cd Bootcamp2-LockScore
+No terminal do Git Digite: git --version;
+
+Instale o VS Code;
+
+Instale a extensão oficial do python;
+
+Instale o Python; 
+
+Digite python --version no CMD;
+
+Abra o VS Code;
+
+Aperte as teclas: Ctrl + Shift + P;
+
+Digite: Git: Clone;
+
+Cole o link do projeto no github: https://github.com/PalatinoMakaveli/Bootcamp2-LockScore
+
+Crie uma pasta chamada "lockscore";
+
+Clique em open;
 
 
----
+Abra o terminal do VS Code e digite: pip install -r requirements.txt;
 
-### 2. Criar ambiente virtual (recomendado)
+digite cd src e aperte enter;
 
-No seu terminal do VS Code digite:
-python -m venv .venv
+para rodar o projeto: digite python app.py;
 
----
+depois abra no navegador: http://127.0.0.1:5000;
 
-### 3. Ativar o ambiente virtual:
+após testar a aplicação aperte CTRL + C para encerrar o programa;
 
-**Windows:**
-No seu terminal do VS Code digite:
-.venv\Scripts\activate
+para rodar os testes saia do domain src digitando cd .. e aperte enter;
 
----
+Apos isso digite: python pytest;
 
-### 4. Instalar dependências:
-Após essa etapa, no seu terminal do VS Code digite:
-pip install -r requirements.txt
-
----
-
-## - Instruções de Execução:
-
-- No seu terminal do VS Code digite:
-python src/app.py
-- Acesse no navegador:
-http://127.0.0.1:5000
-- Digite para parar a execução do código: (Ctrl + C)
----
-
-## - Instruções para Rodar os Testes:
-No seu terminal do VS Code digite:
-python -m pytest
-
----
-
-## - Instruções para Rodar o Lint:
-No seu terminal do VS Code digite:
-ruff check .
-
----
+para rodar o lint digite: ruff check .
 
 ## - Critérios de Avaliação da Senha:
 A aplicação utiliza uma abordagem baseada em regras, considerando:
