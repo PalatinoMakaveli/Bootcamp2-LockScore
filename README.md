@@ -87,7 +87,7 @@ O objetivo é incentivar a criação de senhas mais seguras e reduzir a exposiç
 
 9. Digite: "Git: Clone";
 
-10. Cole o link do projeto no github: https://github.com/PalatinoMakaveli/Bootcamp2-LockScore
+10. Cole o link do github no VS Code na aba do Git Clone: https://github.com/PalatinoMakaveli/Bootcamp2-LockScore
 
 11. Crie uma pasta chamada "lockscore";
 
