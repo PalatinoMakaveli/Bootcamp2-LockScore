@@ -2,20 +2,26 @@ name: CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "entrega-intermediaria" ]
+
   pull_request:
     branches: [ "main" ]
 
+
 jobs:
+
   build:
+
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Checkout do código
         uses: actions/checkout@v3
 
       - name: Configurar Python
         uses: actions/setup-python@v4
+
         with:
           python-version: "3.12"
 
@@ -23,6 +29,7 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
+          pip install pytest ruff
 
       - name: Rodar testes
         run: |

@@ -2,22 +2,60 @@
 <html>
 <head>
     <title>LockScore</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
 
     <div class="container">
+
         <h1>LockScore</h1>
 
+        <h2>Password Strength Analyzer</h2>
+
         <form method="POST">
-            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" value="{{ senha }}" required>
 
-            <button type="button" onclick="toggleSenha()">👁️</button>
+            <input
+                type="password"
+                id="senha"
+                name="senha"
+                placeholder="Digite sua senha"
+                value="{{ senha }}"
+            >
 
-            <button type="submit">Verificar</button>
+            <button type="button" onclick="toggleSenha()">
+                👁️
+            </button>
+
+            <button type="submit">
+                Verificar Senha
+            </button>
+
+            <br><br>
+
+            <h2>Credential Exposure Checker</h2>
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Digite seu email"
+                value="{{ email }}"
+            >
+
+            <button type="submit">
+                Verificar Vazamentos
+            </button>
+
         </form>
 
         {% if resultado %}
+
+            <hr>
+
+            <h3>Resultado da Senha</h3>
+
             <p style="color: {{ resultado.color }}">
                 Força: {{ resultado.strength }}
             </p>
@@ -25,32 +63,103 @@
             <p>{{ resultado.time }}</p>
 
             {% if resultado.feedback %}
+
                 <ul>
+
                     {% for item in resultado.feedback %}
                         <li>{{ item }}</li>
                     {% endfor %}
+
                 </ul>
+
             {% endif %}
 
-            <!-- BARRA DE FORÇA -->
-            <div style="width: 300px; height: 20px; background: #ccc; margin: 10px auto;">
-                <div style="width: {{ resultado.width }}; height: 100%; background: {{ resultado.color }};">
+            <div
+                style="
+                width: 300px;
+                height: 20px;
+                background: #ccc;
+                margin: 10px auto;
+                "
+            >
+
+                <div
+                    style="
+                    width: {{ resultado.width }};
+                    height: 100%;
+                    background: {{ resultado.color }};
+                    "
+                >
                 </div>
+
             </div>
 
         {% endif %}
+
+        {% if breach_result %}
+
+            <hr>
+
+            <h3>Resultado da Verificação de Credenciais</h3>
+
+            <p>
+                <strong>Email:</strong>
+                {{ email }}
+            </p>
+
+            <p>
+                {{ breach_result }}
+            </p>
+
+            <p>
+                <strong>Nível de Risco:</strong>
+
+                <span
+                    style="
+                    color:
+                    {% if risk_level == 'CRÍTICO' %}
+                        red
+                    {% else %}
+                        green
+                    {% endif %}
+                    "
+                >
+                    {{ risk_level }}
+                </span>
+            </p>
+
+            {% if risk_level == "CRÍTICO" %}
+
+                <h4>Recomendações:</h4>
+
+                <ul>
+                    <li>Troque sua senha imediatamente</li>
+                    <li>Ative autenticação MFA</li>
+                    <li>Não reutilize senhas</li>
+                    <li>Verifique dispositivos infectados</li>
+                </ul>
+
+            {% endif %}
+
+        {% endif %}
+
     </div>
 
     <script>
+
     function toggleSenha() {
+
         const input = document.getElementById("senha");
 
         if (input.type === "password") {
             input.type = "text";
-        } else {
+        }
+
+        else {
             input.type = "password";
         }
     }
+
     </script>
 
 </body>
