@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
-from password_checker import check_password_strength
-from services.hudsonrock_service import check_email
+from src.password_checker import check_password_strength
+from src.services.hudsonrock_service import check_email
 
 app = Flask(
     __name__,
