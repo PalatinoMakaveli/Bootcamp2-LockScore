@@ -2,7 +2,11 @@ from flask import Flask, render_template, request
 from password_checker import check_password_strength
 from services.hudsonrock_service import check_email
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    template_folder="templates",
+    static_folder="static"
+)
 
 
 @app.route("/", methods=["GET", "POST"])
